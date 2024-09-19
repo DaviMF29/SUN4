@@ -48,8 +48,11 @@ def q3_tratar_datas(data):
         data[i] = data[i].replace("/", "-")
         data[i] = data[i].replace(" ", "-")
     
-        #adicionar a inversão de dia e ano
-
+        day = data[i].split("-")[0]
+        month = data[i].split("-")[1]
+        year = data[i].split("-")[2]
+        date = f'{year}-{month}-{day}'
+        data[i] = date
     return data
             
 

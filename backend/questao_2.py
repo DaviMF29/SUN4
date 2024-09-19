@@ -6,7 +6,7 @@ def q2_contar_frequencia_palavra(text):
     """
 
     dict = {}
-    text = text.lower()     #para ignorar a diferença entre caracteres maiúsculos
+    text = text.lower()
     text = text.split()
     for word in text:
         if word in dict:

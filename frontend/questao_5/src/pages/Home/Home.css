@@ -1,0 +1,109 @@
+.Home-container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 20px;
+  padding: 70px;
+  height: 400px;
+  background-color: var(--color-bg);
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+}
+
+.Image {
+  display: flex;
+  justify-content: center; 
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  flex: 1;
+}
+
+.Home-container h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+
+.Home-container p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Tittle, .Subtittle, .About {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding: 15px;
+  height: 200px;
+}
+
+/*.Tittle:hover, .Subtittle:hover, .About:hover {
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc; 
+}*/
+
+.Home-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.Img {
+  margin-top: 60px;
+  width: 100%;
+  height: 650px;
+  background-image: url("/advg.webp");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 768px) {
+  .Home-container {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+  }
+
+  .Item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .Home-container h1 {
+    font-size: 24px;
+  }
+
+  .Home-container p {
+    font-size: 18px; 
+  }
+
+  .Tittle, .Subtittle, .About {
+    font-size: 1.25rem; 
+  }
+
+  .Home-container img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .Img {
+    height: 400px;
+  }
+}
+

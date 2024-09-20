@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background: var(--color-red);
+    height: 10vh;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    gap: 1200px;
+}
+
+.Header img {
+    width: 200px;
+    height: 50px;
+}
+
+.Button-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.Button-Section img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.Button-Section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 650px) {
+    .Header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Button-Section {
+        margin-top: 10px;
+    }
+}

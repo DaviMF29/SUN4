@@ -1,0 +1,98 @@
+.Container-Card {
+    display: flex;
+    flex-direction: column;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.Card {
+    display: flex;
+    border-radius: 15px;
+    width: 270px;
+    height: 500px;
+    padding: 20px;
+    background: var(--color-orange);
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-white);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.684);
+}
+
+.Button {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: auto;
+}
+
+.Card .img {
+    align-self: center;
+}
+
+
+.img {
+    width: 170px;
+    height: 100px;
+    background-image: url("/advg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .Container-Card {
+      padding: 10px;
+    }
+  
+    .Title {
+      height: auto;
+    }
+  
+    .Cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Card {
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  
+    .Button {
+      font-size: 18px;
+      padding: 8px 16px;
+    }
+  
+    .img {
+      width: 100px;
+      height: 80px;
+    }
+  }
+  

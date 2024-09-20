@@ -41,19 +41,18 @@ h2 {
 
 .message-input {
   width: 100%;
-  height: 100px; /* Altura do input */
-  padding: 10px; /* Espaço interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  border: 1px solid #ccc; /* Borda */
-  font-size: 16px; /* Tamanho da fonte */
-  /* Para simular o texto no topo, você pode ajustar o padding superior */
-  padding-top: 15px; /* Aumenta o espaço acima do texto */
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  font-size: 16px;
+  padding-top: 15px;
 }
 
 .submit-button {
   width: 100%;
   padding: 10px;
-  background-color: #f39c12;
+  background-color: var(--color-yellow);
   border: none;
   border-radius: 5px;
   color: #fff;

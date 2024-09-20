@@ -18,6 +18,7 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
+    height: 650px;
     width: 100%;
     justify-content: space-around;
 }
@@ -27,7 +28,7 @@
     display: flex;
     border-radius: 15px;
     width: 270px;
-    height: 500px;
+    height: 650px;
     padding: 20px;
     background: var(--color-orange);
     flex-direction: column;
@@ -37,31 +38,40 @@
 }
 
 .Button {
-    background-color: var(--color-bg);
-    color: var(--color-white);
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    align-self: center;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: background-color 0.3s, transform 0.2s;
-    margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  align-self: center;
 }
+
+.Button button {
+  padding: 20px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: var(--color-bg);
+  color: var(--color-orange);
+  font-weight: bold;
+}
+
+.Button button:hover {
+  color: var(--color-redligth);
+  transform: translateY(-2px);
+}
+
 
 .Card .img {
     align-self: center;
 }
 
 
-.img {
+.img img{
     width: 170px;
-    height: 100px;
-    background-image: url("/advg.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 170px;
     border-radius: 50%;
 }
 
